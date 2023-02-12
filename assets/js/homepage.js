@@ -8,9 +8,9 @@ const detalhamentoHTML = document.querySelector('#input-detalhamento')
 const descricaoHTML = document.querySelector('#input-descricao')
 const numeroRecadoHTML = document.querySelector('#numero_recado')
 
-const btnCancelar = document.querySelector('#botao-cancelar')
-const btnCadastrar = document.querySelector('#botao-cadastrar')
-const btnNovoRecado = document.querySelector('#novo-recado')
+const btnCancelar = document.querySelector('.botao-cancelar');
+const btnCadastrar = document.querySelector('.botao-cadastrar');
+const btnNovoRecado = document.querySelector('.novo-recado');
 
 
 document.addEventListener('DOMContentLoaded' (()=>{
@@ -32,7 +32,7 @@ function abrirModal(){
 }
 
 function criarRecado(){
-    const numero_recado = numeroRecadoHTML.value
+    const numeroRecado = numeroRecadoHTML.value
     const descricao = descricaoHTML.value
     const detalhamento = detalhamentoHTML.value
 
