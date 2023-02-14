@@ -12,7 +12,7 @@ formHTML.addEventListener('submit', (e)=>{
     }
 
 
-    localStorage.setItem('usuarioLogado', usuarios.usuario)
+    localStorage.setItem('usuarioLogado', usuarios.usuarios)
     window.location.assign('/homepage.html')
 })
 

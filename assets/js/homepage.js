@@ -8,19 +8,21 @@ const detalhamentoHTML = document.querySelector('#input-detalhamento')
 const descricaoHTML = document.querySelector('#input-descricao')
 const numeroRecadoHTML = document.querySelector('#numero_recado')
 
-const btnCancelar = document.querySelector('.botao-cancelar');
-const btnCadastrar = document.querySelector('.botao-cadastrar');
-const btnNovoRecado = document.querySelector('.novo-recado');
+const btnCancelar = document.querySelector('botao-cancelar');
+const btnCadastrar = document.querySelector('botao-cadastrar');
+const btnNovoRecado = document.getElementById('botao-cadastrar');
 
 
-document.addEventListener('DOMContentLoaded' (()=>{
+/*document.addEventListener('DOMContentLoaded' (()=>{*/
+    function checklog(){
     if(!usuarioLogado){
-        location.assign('/homepage.html')
+        window.location.href = 'login.html'
         return
     }
     console.log(usuarioLogado)
     mostrarRecados(usuarioLogado)
-}))
+/*}))*/}
+
 
 btnCadastrar.addEventListener('click', criarRecado)
 btnCancelar.addEventListener('click', cancelaEdicao)
@@ -149,5 +151,5 @@ function limparDados(){
 
 function sairSistema(){
     localStorage.removeItem('usuarioLogado')
-    location.assign('/login.html')
+    window.location.href = 'login.html'
 }

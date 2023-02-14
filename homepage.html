@@ -15,24 +15,26 @@
                 <h1>SCRAP BOX</h1>
             </div>
             <div class="col-2 col-md-1 mt-2 cabecalho sair">
-                <button class="btn btn-primary">LOGOUT <a href="./login.html"></a></button>
+                <button class="btn btn-primary" onclick="sairSistema()">LOGOUT<a href="./login.html"></a></button>
             </div>
         </div>
     </header>
     <main class="container d-flex flex-column align-items-center">
         <div class="row entrada-dados">
-            <form class="col" id="form-recados" action="cadastrarRecado">
-                <input class="slide-top" id="novo-recado" type="button" value="Novo Recado">
-                <dialog class="mx-auto mt-4" id="pop-up">
-                    <input type="hidden" name="numero_recado" id="numero_recado">
-                    <input type="text" name="descricao" id="input-descricao" class="form-control" placeholder="Descrição">
-                    <input type="text" name="detalhamento" id="input-detalhamento" class="form-control mb-3 mt-1" placeholder="Detalhamento">
-                    <input type="button" id="botao-cancelar" value="Cancelar" class="btn btn-danger">
-                    <input id="botao-cadastrar" type="button" value="Cadastrar" class="btn btn-primary">
+            <form class="col" id="form-recados">
+                <input class="slide-top" id="novo-recado" type="submit" value="Novo Recado">
+                <dialog class="mx-auto mt-4">
+                    <form id="formdois">
+                        <input type="hidden" name="numero_recado" id="numero_recado">
+                        <input type="text" name="descricao" id="input-descricao" class="form-control" placeholder="Descrição">
+                        <input type="text" name="detalhamento" id="input-detalhamento" class="form-control mb-3 mt-1" placeholder="Detalhamento">
+                        <input type="button" id="botao-cancelar" value="Cancelar" class="btn btn-danger">
+                        <input id="botao-cadastrar" type="button" value="Cadastrar" class="btn btn-primary">
+                    </form>
                 </dialog>
             </form>
         </div>
-        <div class="row informacoes">
+        <div class="row informacoes"  id="pop-up">
             <table class="col">
                 <thead>
                     <tr id="cabecalho-tabela">
@@ -49,8 +51,9 @@
                 </tbody>
             </table>
         </div>
+    </div>
     </main>
 
-    <script src="./assets/js/homepage.js"></script>
+    <script src="./assets/js/homepage.js" type="text/javascript"></script>
 </body>
 </html>
