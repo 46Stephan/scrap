@@ -8,9 +8,9 @@ const detalhamentoHTML = document.querySelector('#input-detalhamento')
 const descricaoHTML = document.querySelector('#input-descricao')
 const numeroRecadoHTML = document.querySelector('#numero_recado')
 
-const btnCancelar = document.querySelector('botao-cancelar');
-const btnCadastrar = document.querySelector('botao-cadastrar');
-const btnNovoRecado = document.getElementById('botao-cadastrar');
+const btnCancelar = document.querySelector('#botao-cancelar');
+const btnCadastrar = document.querySelector('#botao-cadastrar');
+const btnNovoRecado = document.getElementById('#botao-cadastrar');
 
 
 /*document.addEventListener('DOMContentLoaded' (()=>{*/
