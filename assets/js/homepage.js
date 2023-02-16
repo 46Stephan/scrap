@@ -10,7 +10,7 @@ const numeroRecadoHTML = document.querySelector('#numero_recado')
 
 const btnCancelar = document.querySelector('#botao-cancelar');
 const btnCadastrar = document.querySelector('#botao-cadastrar');
-const btnNovoRecado = document.getElementById('#botao-cadastrar');
+/*const btnNovoRecado = document.getElementById('novo-recado');*/
 
 
 /*document.addEventListener('DOMContentLoaded' (()=>{*/
@@ -26,8 +26,10 @@ const btnNovoRecado = document.getElementById('#botao-cadastrar');
 
 btnCadastrar.addEventListener('click', criarRecado)
 btnCancelar.addEventListener('click', cancelaEdicao)
-btnNovoRecado.addEventListener('click', abrirModal)
-sairSistemaHTML.addEventListener('click', sairSistema)
+/*btnNovoRecado.addEventListener('click', function(){
+    abrirModal()
+})*/
+/*sairSistemaHTML.addEventListener('click', sairSistema)*/
 
 function abrirModal(){
     modalHTML.showModal()
